@@ -6,7 +6,7 @@ on:
      ROM_URL:
       description: 'Services.jar Url'
       required: true
-      default: 'https://drive.google.com/file/d/1c_ismgdKiUcCUWCmKTeAoOkLycPWyyOG/view?usp=drive_link'
+      default: 'https://github.com/rdsmart123/Signature-verification-disable/blob/main/services.jar'
 jobs:
   build:
     runs-on: ubuntu-latest
