@@ -6,7 +6,7 @@ on:
      ROM_URL:
       description: 'Services.jar Url'
       required: true
-      default: ''
+      default: 'https://drive.google.com/file/d/1Tu1ZvKEYE2nLFRcm4zl6x9KC_DoVeiqF/view?usp=drive_link'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,7 +28,7 @@ jobs:
       
        - name: Download Services.jar
          run: |
-            wget ${{ github.event.inputs.https://drive.google.com/file/d/1Tu1ZvKEYE2nLFRcm4zl6x9KC_DoVeiqF/view?usp=drive_link }} -O services.jar
+            wget ${{ github.event.inputs.ROM_URL }} -O services.jar
             
        - name: PATCH-ING
          run: |
